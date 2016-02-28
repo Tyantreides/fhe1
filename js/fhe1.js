@@ -1,11 +1,17 @@
 var fhe1 = new Object();
 
+fhe1.staticElements = new Array();
+fhe1.nonStaticElements = new Array();
+fhe1.gameElements = new Array();
+(function() {
+
+    
+}());
+
 (function() {
 
     fhe1.getPlayer = function (layer) {
-
-        fhe1.getNewGameElement('player', 'Bitmap', 8);
-
+        fhe1.getNewGameElement('player', 'Bitmap', layer);
 
     }
 
@@ -59,5 +65,4 @@ var fhe1 = new Object();
 }());
 
 
-fhe1.staticElements = new Array();
-fhe1.nonStaticElements = new Array();
+
